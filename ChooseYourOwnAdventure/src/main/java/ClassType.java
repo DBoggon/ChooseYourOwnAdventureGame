@@ -11,8 +11,7 @@ public class ClassType extends Hero {
 	public ClassType() {
 	}
 
-	String classBuilder(String input) {
-
+	public void setUserInput(String userInput) {
 		if (this.userInput.equalsIgnoreCase("paladin") || this.userInput.equalsIgnoreCase("p")
 				|| this.userInput.equals("1")) {
 			this.userInput = "Paladin";
@@ -28,7 +27,6 @@ public class ClassType extends Hero {
 			this.userInput = "Archer";
 
 		}
-		return this.userInput;
 	}
 
 	public String getUserInput() {
