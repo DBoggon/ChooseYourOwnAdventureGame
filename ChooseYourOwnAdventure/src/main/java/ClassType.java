@@ -2,35 +2,35 @@
 public class ClassType extends Hero {
 	private int hitPoints;
 	private int damage;
-	private String userInput;
+	private String userClassSelection;
 
-	public ClassType(String classType) {
-		super(classType);
+	public ClassType(String userClassSelection) {
+		this.userClassSelection = userClassSelection;
 	}
-
+	
 	public ClassType() {
 	}
 
-	public void setUserInput(String userInput) {
-		if (this.userInput.equalsIgnoreCase("paladin") || this.userInput.equalsIgnoreCase("p")
-				|| this.userInput.equals("1")) {
-			this.userInput = "Paladin";
+	public void setUserClassSelection(String userInput) {
+		if (this.userClassSelection.equalsIgnoreCase("paladin") || this.userClassSelection.equalsIgnoreCase("p")
+				|| this.userClassSelection.equals("1")) {
+			this.userClassSelection = "Paladin";
 
 		}
-		if (this.userInput.equalsIgnoreCase("rogue") || this.userInput.equalsIgnoreCase("r")
-				|| this.userInput.equals("2")) {
-			this.userInput = "Rogue";
+		if (this.userClassSelection.equalsIgnoreCase("rogue") || this.userClassSelection.equalsIgnoreCase("r")
+				|| this.userClassSelection.equals("2")) {
+			this.userClassSelection = "Rogue";
 
 		}
-		if (this.userInput.equalsIgnoreCase("archer") || this.userInput.equalsIgnoreCase("a")
-				|| this.userInput.equals("3")) {
-			this.userInput = "Archer";
+		if (this.userClassSelection.equalsIgnoreCase("archer") || this.userClassSelection.equalsIgnoreCase("a")
+				|| this.userClassSelection.equals("3")) {
+			this.userClassSelection = "Archer";
 
 		}
 	}
 
-	public String getUserInput() {
-		return userInput;
+	public String getUserClassSelection() {
+		return userClassSelection;
 	}
 
 }
